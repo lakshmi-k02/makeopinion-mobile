@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
     .float-image {
         border-radius: 6px;
     }
