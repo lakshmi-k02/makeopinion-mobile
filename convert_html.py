@@ -5,6 +5,13 @@ def update_html_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         html_content = file.read()
 
+    # Update localhost section URLs
+    html_content = re.sub(
+        r'http://localhost:3000',
+        r'https://lakshmi-k02.github.io/makeopinion-mobile',
+        html_content
+    )
+
     # Update navigation section URLs
     html_content = re.sub(
         r'https://www\.makeopinion\.com/en/(.*?)\.php',
@@ -38,5 +45,5 @@ def update_html_file(file_path):
     print(f"Updated HTML file saved as: {updated_file_path}")
 
 # Example usage
-input_file = 'user-students.html'  # Replace with your actual HTML file path
+input_file = 'uc-price.html'  # Replace with your actual HTML file path
 update_html_file(input_file)
