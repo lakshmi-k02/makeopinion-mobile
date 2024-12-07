@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Startup Hero Section</title>
+    <style>
+        /* General Styles */
+.home-hero-section-one {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+    .home-hero-main-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home-hero-caption-block {
+        order: 1;
+        max-width: 50%;
+    }
+
+    .home-hero-image-block {
+        order: 2;
+        max-width: 50%;
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 767px) {
+    .home-hero-main-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-hero-caption-block {
+        order: 1;
+    }
+
+    .home-hero-image-block {
+        order: 2;
+        margin-top: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section class="home-hero-section-one wf-section" style="background: #fff; padding-bottom: 170px; padding-top: 130px; background-image: url('./assets/images_new/bg-final.png'); background-size: cover; background-position: 0 0;">
+        <div class="home-hero-container-large w-container">
+            <div class="home-hero-main-block">
+                <!-- Hero Content -->
+                <div class="home-hero-caption-block">
+                    <div class="overflow-off">
+                        <div class="w-clearfix">
+                            <h1 class="home-hero-heading">
+                                <span style="font-size: 36px"><span style="color:#0070DF">Startups</span> that <span style="color:#0070DF">thrive</span></span><br>
+                                <span style="color:#0070DF">Validate</span> ideas early.<br />
+                                <span style="color:#0070DF">Prioritize</span> features.<br />
+                                <span style="color:#0070DF">Market</span> your product.
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="overflow-off">
+                        <p class="hero-para-two">
+                            Be the next Google: validate and refine your business idea with real people. Build products that sell and are loved by customers.
+                        </p>
+                    </div>
+                    <div class="overflow-off">
+                        <div class="hero-caption-buttons-one">
+                            <a role="button" data-fancybox="register2" href="#registerbox" class="trial-button w-inline-block">
+                                <div class="trail-text-two-home">Create free account</div>
+                            </a>
+                            <a role="button" onclick="book_a_demo();" class="trial-button feature-button w-inline-block">
+                                <div class="trail-text-two-home">Book a demo</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Hero Images -->
+                <div class="home-hero-image-block">
+                    <div>
+                        <div class="banner-girl-image-block">
+                            <img src="./assets/images_new/startup-back.png" alt="Banner Girl Image" class="hero-main-image">
+                        </div>
+                        <div class="banner-float-images">
+                            <div class="float-image-one">
+                                <img src="./assets/images_new/startup-1.png" alt="Banner Image One" class="float-image">
+                            </div>
+                            <div class="float-image-two">
+                                <img src="./assets/images_new/startup-2.png" alt="Finance" class="float-image">
+                            </div>
+                            <div class="float-image-three">
+                                <img src="./assets/images_new/startup-3.png" alt="Order Value" class="float-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+</body>
+</html>
