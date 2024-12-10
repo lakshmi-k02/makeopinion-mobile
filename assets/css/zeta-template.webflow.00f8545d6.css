@@ -12292,6 +12292,12 @@ blockquote {
   padding-left: 0;
   display: flex;
 }
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .learn-button-block {
+    justify-content: center;
+  }
+}
 
 .ideas-float-image {
   width: 60%;
